@@ -1,0 +1,9 @@
+extends /theme/_layout.pug
+
+block append head
+	//- script(src='index.js')
+
+block body
+	h1 I am the #{data.page.home.name} page.
+
+	include:markdown-it(linkify) test.md

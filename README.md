@@ -4,55 +4,55 @@
 
 ## What I want my build tool to do:
 
-- HTML compiler:
-    - Compile pug to html
-    - Compile markdown files to html
-    - Insert markdown in pug (pug filters?)
-    - Pass global data (from archie.block.js?) to pug (or any other task?)
-    - Minification (prod?)
-- CSS compiler:
-    - Compile stylus to css
-    - Autoprefix
-    - Concatenation (prod?)
-    - Minification (prod?)
-    - Rename class names to make files smaller (Google Closure Stylesheets?)
-    - Format CSS (sort properties, etc)
-    - Cache busting / add hash to css/js files.
-- JS compiler:
-    - Modules / bundling?
-    - Concatenation (prod?)
-    - Minification (prod?)
-    - Cache busting / add hash to css/js files.
-- Linters:
-    - JSHint
-    - CSS linter
-    - HTML linter
-- SVG: Compile responsive SVG sprite and insert to HTML file.
-- Images and static assets:
-    - Copy images and other assets
-    - Compress images
-    - Responsive images using something like picturefill or srcset
-    - Convert images to base64
-    - Images sprites
-    - Automatically push static assets embedded in HTML directly to CDN (like Amazon S3 or CloudFront) and update the URL in source files.
-- Any file:
-    - Add banner to top of files indicating license, author, version, etc.
-    - Rename any file.
-    - Identify broken links (HTML files?)
-- Incrementally watch and build files (watchify? or onchange?).
-- Local server (browsersync?)
-- Testing:
-    - Run node css / visual screenshot regression tests (gemini? or phantomcss/slimerjs?) (integrates with BrowserStack? or cloud based testing tool?)
-    - Unit testing (Mocha, Jasmine, QUnit)
-    - E2E testing
-    - JS error detection.
-- Performance metrics:
-    - Number of requests?
-    - Load time? (TTFB, Load)
-    - File sizes
-    - Google Pagespeed Optimizer API?
-    - Pingdom Tools API?
-- Automatically generate documentation of the project with CSS style guides and JS functions?
+[x] HTML compiler:
+    [x] Compile pug to html
+    [x] Compile markdown files to html
+    [x] Insert markdown in pug (pug filters?)
+    [x] Pass global data (from archie.block.js?) to pug (or any other task?)
+    [x] Minification (prod?)
+[ ] CSS compiler:
+    [ ] Compile stylus to css
+    [ ] Autoprefix
+    [ ] Concatenation (prod?)
+    [ ] Minification (prod?)
+    [ ] Rename class names to make files smaller (Google Closure Stylesheets?)
+    [ ] Format CSS (sort properties, etc)
+    [ ] Cache busting / add hash to css/js files.
+[ ] JS compiler:
+    [ ] Modules / bundling?
+    [ ] Concatenation (prod?)
+    [ ] Minification (prod?)
+    [ ] Cache busting / add hash to css/js files.
+[ ] Linters:
+    [ ] JSHint
+    [ ] CSS linter
+    [ ] HTML linter
+[ ] SVG: Compile responsive SVG sprite and insert to HTML file.
+[ ] Images and static assets:
+    [ ] Copy images and other assets
+    [ ] Compress images
+    [ ] Responsive images using something like picturefill or srcset
+    [ ] Convert images to base64
+    [ ] Images sprites
+    [ ] Automatically push static assets embedded in HTML directly to CDN (like Amazon S3 or CloudFront) and update the URL in source files.
+[ ] Any file:
+    [ ] Add banner to top of files indicating license, author, version, etc.
+    [ ] Rename any file.
+    [ ] Identify broken links (HTML files?)
+[ ] Incrementally watch and build files (watchify? or onchange?).
+[ ] Local server (browsersync?)
+[ ] Testing:
+    [ ] Run node css / visual screenshot regression tests (gemini? or phantomcss/slimerjs?) (integrates with BrowserStack? or cloud based testing tool?)
+    [ ] Unit testing (Mocha, Jasmine, QUnit)
+    [ ] E2E testing
+    [ ] JS error detection.
+[ ] Performance metrics:
+    [ ] Number of requests?
+    [ ] Load time? (TTFB, Load)
+    [ ] File sizes
+    [ ] Google Pagespeed Optimizer API?
+    [ ] Pingdom Tools API?
+[ ] Automatically generate documentation of the project with CSS style guides and JS functions?
 
 ## Example scripts
 
