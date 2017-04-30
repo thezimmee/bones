@@ -25,6 +25,8 @@
     [x] CSS linter (stylelint)
     [x] HTML linter (htmllint or htmlhint)
 [x] Local server (browsersync? or lite-server?)
+[x] Incrementally watch and build files (watchify? or onchange?).
+[x] Add git hooks to automate the process of 1) creating a prod build; 2) running all prod tasks:
 [ ] SVG: Compile responsive SVG sprite and insert to HTML file.
 [ ] Images and static assets:
     [ ] Copy images and other assets
@@ -33,32 +35,32 @@
     [ ] Convert images to base64
     [ ] Images sprites
     [ ] Automatically push static assets embedded in HTML directly to CDN (like Amazon S3 or CloudFront) and update the URL in source files.
-[ ] Any file:
-    [ ] Add banner to top of files indicating license, author, version, etc.
-    [ ] Rename any file.
-    [ ] Identify broken links (HTML files?)
-[ ] Incrementally watch and build files (watchify? or onchange?).
-[ ] Testing:
+[ ] Set up automated testing and use git hooks and process.exit() to run them:
     [ ] Run node css / visual screenshot regression tests (gemini? or phantomcss/slimerjs?) (integrates with BrowserStack? or cloud based testing tool?)
     [ ] Unit testing (Mocha, Jasmine, QUnit)
     [ ] E2E testing
     [ ] JS error detection.
+[ ] Add production build to 1) a git hook (precommit?) and 2) the option to run a prod build on process.exit():
+    [ ] precommit git hook: Lint ALL files (not just changed files) either when closing out a watch/build or prior to a git commit.
+    [ ] precommit git hook: Cache busting / add hash to css/js files.
+    [ ] precommit git hook: Rename CSS class names to make files smaller (Google Closure Stylesheets?)
+    [ ] precommit git hook: Format CSS (sort properties, etc)
+    [ ] precommit git hook: Format JS with eslint / jscs
+    [ ] precommit git hook: Cache busting / add hash to css/js files.
 [ ] Performance metrics:
     [ ] Number of requests?
     [ ] Load time? (TTFB, Load)
     [ ] File sizes
     [ ] Google Pagespeed Optimizer API?
     [ ] Pingdom Tools API?
+[ ] Any file:
+    [ ] Add banner to top of files indicating license, author, version, etc.
+    [ ] Rename any file?
+    [ ] Identify broken links (HTML files?)
+[ ] Add automated changelog.
 [ ] Automatically generate documentation of the project with CSS style guides and JS functions?
-[ ] Add better logging for all tasks (especially JS... browserify doesn't have a great logger).
+[ ] Add better logging for all tasks (especially JS... browserify doesn't have a great logger)?
 [ ] Add support for postcss, less?
-[ ] Add hook to automate the process of 1) creating a prod build; 2) running all prod tasks:
-    [ ] Lint ALL files (not just changed files) either when closing out a watch/build or prior to a git commit.
-    [ ] Cache busting / add hash to css/js files.
-    [ ] Rename CSS class names to make files smaller (Google Closure Stylesheets?)
-    [ ] Format CSS (sort properties, etc)
-    [ ] Format JS with eslint / jscs
-    [ ] Cache busting / add hash to css/js files.
 
 
 ## Example scripts
