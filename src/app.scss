@@ -1,0 +1,9 @@
+
+$test: red;
+
+body {
+	background-color: $test;
+	display: flex;
+}
+
+@import 'core/reset';

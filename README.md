@@ -11,13 +11,16 @@
     [x] Pass global data (from archie.block.js?) to pug (or any other task?)
     [x] Minification (prod?)
 [ ] CSS compiler:
-    [ ] Compile stylus to css
-    [ ] Autoprefix
-    [ ] Concatenation (prod?)
-    [ ] Minification (prod?)
-    [ ] Rename class names to make files smaller (Google Closure Stylesheets?)
-    [ ] Format CSS (sort properties, etc)
-    [ ] Cache busting / add hash to css/js files.
+    [x] Compile sass to css
+    [x] Compile stylus to css
+    [x] Autoprefix
+    [x] Concatenation (prod?)
+    [/] Minification (prod?)
+    [ ] Add hook for the following production only optimizations:
+        [ ] Rename class names to make files smaller (Google Closure Stylesheets?)
+        [ ] Format CSS (sort properties, etc)
+        [ ] Cache busting / add hash to css/js files.
+    [/] After implementing in SASS, try postcss or stylus.
 [ ] JS compiler:
     [ ] Modules / bundling?
     [ ] Concatenation (prod?)
