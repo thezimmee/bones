@@ -10,28 +10,21 @@
     [x] Insert markdown in pug (pug filters?)
     [x] Pass global data (from archie.block.js?) to pug (or any other task?)
     [x] Minification (prod?)
-[ ] CSS compiler:
+[x] CSS compiler:
     [x] Compile sass to css
     [x] Compile stylus to css
     [x] Autoprefix
     [x] Concatenation (prod?)
     [x] Minification (prod?)
-    [ ] Add hook for the following production only optimizations:
-        [ ] Rename class names to make files smaller (Google Closure Stylesheets?)
-        [ ] Format CSS (sort properties, etc)
-        [ ] Cache busting / add hash to css/js files.
-    [/] After implementing in SASS, try postcss or stylus.
-[ ] JS compiler:
+[x] JS compiler:
     [x] Modules / bundling?
-    [ ] Add better logging for JS tasks (browserify doesn't have a great logger).
-    [ ] Add hook for the following production only optimizations:
-        [x] Concatenation (prod?)
-        [x] Minification (prod?)
-        [ ] Cache busting / add hash to css/js files.
-[ ] Linters:
-    [ ] JSHint
-    [ ] CSS linter
-    [ ] HTML linter
+    [x] Concatenation (prod?)
+    [x] Minification (prod?)
+[x] Linters:
+    [x] JS (eslint)
+    [x] CSS linter (stylelint)
+    [x] HTML linter (htmllint or htmlhint)
+[ ] Local server (browsersync? or lite-server?)
 [ ] SVG: Compile responsive SVG sprite and insert to HTML file.
 [ ] Images and static assets:
     [ ] Copy images and other assets
@@ -45,7 +38,6 @@
     [ ] Rename any file.
     [ ] Identify broken links (HTML files?)
 [ ] Incrementally watch and build files (watchify? or onchange?).
-[ ] Local server (browsersync?)
 [ ] Testing:
     [ ] Run node css / visual screenshot regression tests (gemini? or phantomcss/slimerjs?) (integrates with BrowserStack? or cloud based testing tool?)
     [ ] Unit testing (Mocha, Jasmine, QUnit)
@@ -58,6 +50,16 @@
     [ ] Google Pagespeed Optimizer API?
     [ ] Pingdom Tools API?
 [ ] Automatically generate documentation of the project with CSS style guides and JS functions?
+[ ] Add better logging for all tasks (especially JS... browserify doesn't have a great logger).
+[ ] Add support for postcss, less?
+[ ] Add hook to automate the process of 1) creating a prod build; 2) running all prod tasks:
+    [ ] Lint ALL files (not just changed files) either when closing out a watch/build or prior to a git commit.
+    [ ] Cache busting / add hash to css/js files.
+    [ ] Rename CSS class names to make files smaller (Google Closure Stylesheets?)
+    [ ] Format CSS (sort properties, etc)
+    [ ] Format JS with eslint / jscs
+    [ ] Cache busting / add hash to css/js files.
+
 
 ## Example scripts
 

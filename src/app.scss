@@ -1,9 +1,11 @@
 
-$test: red;
+$test: #ccc;
 
-body {
+body { /* stylelint-disable-line */
 	background-color: $test;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @import 'core/reset';
