@@ -15,17 +15,19 @@
     [x] Compile stylus to css
     [x] Autoprefix
     [x] Concatenation (prod?)
-    [/] Minification (prod?)
+    [x] Minification (prod?)
     [ ] Add hook for the following production only optimizations:
         [ ] Rename class names to make files smaller (Google Closure Stylesheets?)
         [ ] Format CSS (sort properties, etc)
         [ ] Cache busting / add hash to css/js files.
     [/] After implementing in SASS, try postcss or stylus.
 [ ] JS compiler:
-    [ ] Modules / bundling?
-    [ ] Concatenation (prod?)
-    [ ] Minification (prod?)
-    [ ] Cache busting / add hash to css/js files.
+    [x] Modules / bundling?
+    [ ] Add better logging for JS tasks (browserify doesn't have a great logger).
+    [ ] Add hook for the following production only optimizations:
+        [x] Concatenation (prod?)
+        [x] Minification (prod?)
+        [ ] Cache busting / add hash to css/js files.
 [ ] Linters:
     [ ] JSHint
     [ ] CSS linter
@@ -114,7 +116,7 @@
     "pretest": "npm run lint -s",
 
     # https://idevie.com/web-development/using-npm-as-a-build-tool
-    "start": "concurrently -k "npm run dev" "npm run watch-css"",
+    "start": "concurrently -k \"npm run dev\" \"npm run watch-css\"",
     "dev": "lite-server",
     "db": "json-server --watch db.json --port 3005",
     "build-js": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js",
