@@ -24,7 +24,7 @@
     [x] JS (eslint)
     [x] CSS linter (stylelint)
     [x] HTML linter (htmllint or htmlhint)
-[ ] Local server (browsersync? or lite-server?)
+[x] Local server (browsersync? or lite-server?)
 [ ] SVG: Compile responsive SVG sprite and insert to HTML file.
 [ ] Images and static assets:
     [ ] Copy images and other assets
