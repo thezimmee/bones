@@ -27,10 +27,14 @@
 [x] Local server (browsersync? or lite-server?)
 [x] Incrementally watch and build files (watchify? or onchange?).
 [x] Add git hooks to automate the process of 1) creating a prod build; 2) running all prod tasks:
-[ ] SVG: Compile responsive SVG sprite and insert to HTML file.
+[ ] SVG (svgo): Compile responsive SVG sprite and insert to HTML file.
+[ ] Convert css fonts to base64 (postcss-font-magician & postcss-inline-base64 or postcss-base64, postcss-url, fontmin, webfont, fontoptim, postcss-url, postcss-font-magician?):
+    [ ] Copy node_modules font to destination and update reference in source css OR
+    [ ] Convert scss source file to base64?
 [ ] Images and static assets:
-    [ ] Copy images and other assets
+    [ ] Copy images and other assets (postcss-copy)
     [ ] Compress images
+    [ ] Convert images to base64
     [ ] Responsive images using something like picturefill or srcset
     [ ] Convert images to base64
     [ ] Images sprites
