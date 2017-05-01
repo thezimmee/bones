@@ -27,10 +27,7 @@
 [x] Local server (browsersync? or lite-server?)
 [x] Incrementally watch and build files (watchify? or onchange?).
 [x] Add git hooks to automate the process of 1) creating a prod build; 2) running all prod tasks:
-[ ] SVG (svgo): Compile responsive SVG sprite and insert to HTML file.
-[ ] Convert css fonts to base64 (postcss-font-magician & postcss-inline-base64 or postcss-base64, postcss-url, fontmin, webfont, fontoptim, postcss-url, postcss-font-magician?):
-    [ ] Copy node_modules font to destination and update reference in source css OR
-    [ ] Convert scss source file to base64?
+[x] SVG (svgo): Compile responsive SVG sprite and insert to HTML file.
 [ ] Images and static assets:
     [ ] Copy images and other assets (postcss-copy)
     [ ] Compress images
@@ -39,6 +36,9 @@
     [ ] Convert images to base64
     [ ] Images sprites
     [ ] Automatically push static assets embedded in HTML directly to CDN (like Amazon S3 or CloudFront) and update the URL in source files.
+[ ] Convert css fonts to base64 (postcss-font-magician & postcss-inline-base64 or postcss-base64, postcss-url, fontmin, webfont, fontoptim, postcss-url, postcss-font-magician?):
+    [ ] Copy node_modules font to destination and update reference in source css OR
+    [ ] Convert scss source file to base64?
 [ ] Set up automated testing and use git hooks and process.exit() to run them:
     [ ] Run node css / visual screenshot regression tests (gemini? or phantomcss/slimerjs?) (integrates with BrowserStack? or cloud based testing tool?)
     [ ] Unit testing (Mocha, Jasmine, QUnit)
@@ -61,9 +61,10 @@
     [ ] Add banner to top of files indicating license, author, version, etc.
     [ ] Rename any file?
     [ ] Identify broken links (HTML files?)
+[ ] Set up timers to time certain tasks.
+[ ] Add better logging for all tasks (especially JS... browserify doesn't have a great logger)?
 [ ] Add automated changelog.
 [ ] Automatically generate documentation of the project with CSS style guides and JS functions?
-[ ] Add better logging for all tasks (especially JS... browserify doesn't have a great logger)?
 [ ] Add support for postcss, less?
 
 
