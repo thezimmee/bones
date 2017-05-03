@@ -28,14 +28,8 @@
 [x] Incrementally watch and build files (watchify? or onchange?).
 [x] Add git hooks to automate the process of 1) creating a prod build; 2) running all prod tasks:
 [x] SVG (svgo): Compile responsive SVG sprite and insert to HTML file.
-[ ] Images and static assets:
-    [ ] Copy images and other assets (postcss-copy)
-    [ ] Compress images
-    [ ] Convert images to base64
-    [ ] Responsive images using something like picturefill or srcset
-    [ ] Convert images to base64
-    [ ] Images sprites
-    [ ] Automatically push static assets embedded in HTML directly to CDN (like Amazon S3 or CloudFront) and update the URL in source files.
+[x] Responsive images (picturefill):
+[x] Compress images (imagemin)
 [ ] Convert css fonts to base64 (postcss-font-magician & postcss-inline-base64 or postcss-base64, postcss-url, fontmin, webfont, fontoptim, postcss-url, postcss-font-magician?):
     [ ] Copy node_modules font to destination and update reference in source css OR
     [ ] Convert scss source file to base64?
@@ -61,10 +55,19 @@
     [ ] Add banner to top of files indicating license, author, version, etc.
     [ ] Rename any file?
     [ ] Identify broken links (HTML files?)
+[ ] Add unit tests to make sure each task in bones runs properly.
 [ ] Set up timers to time certain tasks.
 [ ] Add better logging for all tasks (especially JS... browserify doesn't have a great logger)?
 [ ] Add automated changelog.
+[ ] Automatically push static assets embedded in HTML directly to CDN (like Amazon S3 or CloudFront) and update the URL in source files.
 [ ] Automatically generate documentation of the project with CSS style guides and JS functions?
+[ ] Improve responsive images?
+    [ ] Incremental build on watch (currently builds all).
+    [ ] Parse srcset and picture elements to create config?
+    [ ] Update srcset attributes when config changes?
+    [ ] Convert images to base64?
+    [ ] Image sprites?
+[ ] Copy other assets (postcss-copy)
 [ ] Add support for postcss, less?
 
 

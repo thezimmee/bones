@@ -7,4 +7,19 @@ block append head
 block body
 	h1 I am the #{data.page.home.name} page.
 
+	//- Wide image
+	img(srcset="assets/wide--400w.jpg 400w, assets/wide--1200w.jpg 1200w", sizes="80vw, (min-width: 768px) 100vw", alt="Wide image.")
+	//- No data-src
+	img(srcset="assets/slider--200w.jpg 200w, assets/slider--400w.jpg 400w", alt="Form sliders.")
+	//- 1x, 2x
+	img(srcset="assets/whale--640x430.jpg 1x, assets/whale--1280x860.jpg 2x, assets/whale--1920x1290 3x", alt="Wide image.")
+	//- Picture (adds an extra to the wide srcset from above)
+	picture
+		source(srcset="assets/wide--200w.jpg")
+		source(srcset="assets/wide--400w.jpg" media="(min-width: 400px)")
+		source(srcset="assets/wide--1200w.jpg" media="(min-width: 800px)")
+		source(srcset="assets/wide--2400w.jpg" media="(min-width: 1280px)")
+		source(srcset="assets/wide--4480x1000.jpg" media="(min-width: 1440px)")
+		img(srcset="assets/wide--400w.jpg" alt="Fallback image")
+
 	include:markdown-it(linkify) test.md
