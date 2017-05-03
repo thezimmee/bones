@@ -57,7 +57,7 @@
     [ ] Identify broken links (HTML files?)
 [ ] Add unit tests to make sure each task in bones runs properly.
 [ ] Set up timers to time certain tasks.
-[ ] Add better logging for all tasks (especially JS... browserify doesn't have a great logger)?
+[ ] Add better logging for all tasks (npmlog?) (especially JS... browserify doesn't have a great logger)?
 [ ] Add automated changelog.
 [ ] Automatically push static assets embedded in HTML directly to CDN (like Amazon S3 or CloudFront) and update the URL in source files.
 [ ] Automatically generate documentation of the project with CSS style guides and JS functions?

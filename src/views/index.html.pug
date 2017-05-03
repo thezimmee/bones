@@ -5,7 +5,8 @@ block append head
 	//- script(src='index.js')
 
 block body
-	h1 I am the #{data.page.home.name} page.
+	h1 I am the #{data.page.home.name} page. <svg width="32" height="32"><use xlink:href="app.svg#icon__add-alert"/></svg>
+
 
 	//- Wide image
 	img(srcset="assets/wide--400w.jpg 400w, assets/wide--1200w.jpg 1200w", sizes="80vw, (min-width: 768px) 100vw", alt="Wide image.")
@@ -23,3 +24,4 @@ block body
 		img(srcset="assets/wide--400w.jpg" alt="Fallback image")
 
 	include:markdown-it(linkify) test.md
+

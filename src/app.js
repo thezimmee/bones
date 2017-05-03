@@ -1,10 +1,15 @@
+/* eslint-env node, mocha */
 /**
  * app.js
  * ------
  * Main app JS controller.
  */
 
-// var angular = require('angular');
-var core = require('./core/core');
+// SVG polyfill.
+var svg4everybody = require('svg4everybody');
+svg4everybody();
 
-core();
+// Polfyill for responsive images (<picture/> and srcset).
+var picturefill = require('picturefill');
+
+var core = require('./core/core');
