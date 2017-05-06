@@ -1,8 +1,18 @@
 
 $test: #ccc;
 
-body { /* stylelint-disable-line */
+body { // stylelint-disable-line
 	background-color: $test;
+	font-family: 'Open Sans';
+}
+
+.flex {
+	display: flex;
+}
+
+.bg-image {
+	background-image: url("./assets/whale.jpg");
+	width: width("./assets/whale.jpg");
 }
 
 @import 'core/reset';

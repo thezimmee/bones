@@ -30,14 +30,21 @@
 [x] SVG (svgo): Compile responsive SVG sprite and insert to HTML file.
 [x] Responsive images (picturefill):
 [x] Compress images (imagemin)
-[ ] Convert css fonts to base64 (postcss-font-magician & postcss-inline-base64 or postcss-base64, postcss-url, fontmin, webfont, fontoptim, postcss-url, postcss-font-magician?):
-    [ ] Copy node_modules font to destination and update reference in source css OR
-    [ ] Convert scss source file to base64?
+[x] Convert css fonts to base64 (postcss-font-magician & postcss-inline-base64 or postcss-base64, postcss-url, fontmin, webfont, fontoptim, postcss-url, postcss-font-magician?):
+    [x] Copy node_modules font to destination and update reference in source css OR
+    [x] Convert scss source file to base64?
 [ ] Set up automated testing and use git hooks and process.exit() to run them:
-    [ ] Run node css / visual screenshot regression tests (gemini? or phantomcss/slimerjs?) (integrates with BrowserStack? or cloud based testing tool?)
+    [ ] Run node css / visual screenshot regression tests with [webdriverio](http://webdriver.io/) and [wdio-screenshot](https://github.com/zinserjan/wdio-screenshot) (other tools include gemini?, paypal/nemojs?, nightwatchjs?, dayguardjs?, casperjs/phantomcss/slimerjs?) (integrates with BrowserStack? or cloud based testing tool?)
     [ ] Unit testing (Mocha, Jasmine, QUnit)
     [ ] E2E testing
     [ ] JS error detection.
+[ ] Add [webcomponents](https://www.webcomponents.org/introduction) with their [polyfills](https://github.com/webcomponents/webcomponentsjs).
+[ ] Performance metrics:
+    [ ] Number of requests?
+    [ ] Load time? (TTFB, Load)
+    [ ] File sizes
+    [ ] Google Pagespeed Optimizer API?
+    [ ] Pingdom Tools API?
 [ ] Add production build to 1) a git hook (precommit?) and 2) the option to run a prod build on process.exit():
     [ ] precommit git hook: Lint ALL files (not just changed files) either when closing out a watch/build or prior to a git commit.
     [ ] precommit git hook: Cache busting / add hash to css/js files.
@@ -45,12 +52,6 @@
     [ ] precommit git hook: Format CSS (sort properties, etc)
     [ ] precommit git hook: Format JS with eslint / jscs
     [ ] precommit git hook: Cache busting / add hash to css/js files.
-[ ] Performance metrics:
-    [ ] Number of requests?
-    [ ] Load time? (TTFB, Load)
-    [ ] File sizes
-    [ ] Google Pagespeed Optimizer API?
-    [ ] Pingdom Tools API?
 [ ] Any file:
     [ ] Add banner to top of files indicating license, author, version, etc.
     [ ] Rename any file?
