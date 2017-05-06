@@ -22,7 +22,7 @@
     "build": "npm run build:pug && npm run build:sass && npm run build:js && npm run build:images",
     "postbuild": "echo 'Build complete.\n' && npm run watch",
     "build:prod": "npm run build:pug & npm run build:prod:sass & npm run build:prod:js",
-    "serve": "browser-sync start --config bs-config.js",
+    "serve": "browser-sync start --config ./.browsersync.js",
     "watch": "node ./lib/events.js & echo 'Preparing browser-sync...' & npm run watch:pug & npm run watch:data & npm run watch:sass & npm run watch:js & npm run watch:eslint & npm run watch:htmllint & npm run watch:svg & npm run watch:images & npm run serve",
     "pug": "node lib/pug.js",
     "build:pug": "npm run pug -- $(find ./src -name '*.html.pug') --type=build",

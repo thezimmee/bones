@@ -43,7 +43,7 @@ module.exports = {
     },
     logLevel: 'info',
     logPrefix: 'i',
-    logConnections: true,
+    logConnections: false,
     logFileChanges: true,
     logSnippet: true,
     rewriteRules: [],
